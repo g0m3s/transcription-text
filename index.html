@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transcricao</title>
+</head>
+<body>
+
+    <section>
+
+        <div class="container">
+
+            <header>
+
+                <div class="info">Basta clicar no botao, nos dar a permissão para ouvir seu microfone,começar a falar que transformarei o que você fala em texto!</div>   <!--Obviamente melhorar esse texto. colocar um video-explicacao, sei la-->
+
+            </header>
+
+            <div class="center"">
+
+                <div class="caixa-de-texto">
+
+                    <p id="texto-transcrito"></p>
+
+                    <div id="copiar">
+
+                        <button class="btn" data-clipboard-target="#texto-transcrito">
+                            <img src="img/copy.png" alt="Copy to clipboard">
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <button id="iniciar" onclick="verificaPausa()">Iniciar</button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="about">
+
+        <div class="boxes">
+
+            <div class="box">
+
+                <div class="titulo">
+
+                    <h3>Vamos la!</h3>
+                
+                </div>
+
+                <h4 class="textos-box">Poupe o tempo que levaria digitando e seja mais produtivo deixando esse trabalho comigo. </h4>
+
+            </div>
+
+            <div class="box">
+
+                <div class="titulo">
+
+                    <h3>Copie seu texto</h3>
+                
+                </div>
+
+                <!-- aqui vai um video/gif mostrando onde fica o botao que permite copiar texto para area de trabalho -->
+
+            </div>
+
+            <div class="box">
+
+                <div class="titulo">
+
+                    <h3>Observações</h3>
+                
+                </div>
+
+                <h4 class="textos-box" style="font-size: 9pt;">É possivel que haja erros durante o processo de transcrição. Logo, pedimos gentilmente que dê uma pequena revisada logo que acabar :)</h4>
+
+            </div>
+
+            <div class="box">
+
+                <div class="titulo">
+
+                    <h3>Ajude-nos</h3>
+                
+                </div>
+
+                <h4 class="textos-box">Clique em algum dos anuncios. Isso ajuda com que eu permaneça no ar!. Desejo carinhosamente ter conseguido te ajudar.</h4>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <script src="main.js"></script>
+    <script src="clipboard.min.js"></script>
+    
+</body>
+</html>

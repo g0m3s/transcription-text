@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono|Special+Elite&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0%;
+
+}
+
+::-webkit-scrollbar {
+
+    width: 10px;
+
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(39, 38, 38);
+  }
+
+::-webkit-scrollbar-thumb {
+    
+    background: rgba(255, 255, 255, 0.664);
+    border-radius: 10px;
+
+}
+
+@media (max-width: 700px) {
+
+    .caixa-de-texto {
+
+        font-size: 7pt;
+        height: 85vh;
+        width: 75vw;
+        
+    }
+
+    .info{
+
+        font-size: 8pt;
+
+    }
+
+    p::after {
+
+        font-size: 8pt;
+    
+    }
+
+  }
+
+  body{
+
+    font-family: 'Roboto Mono', monospace;
+
+  }
+
+.container {
+
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-rows: .5fr 2.3fr;
+    height: 100vh;
+
+}
+
+.info {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.center {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: url("img/m3.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    
+}
+
+
+.caixa-de-texto {
+
+    height: 60vh;
+    width: 60vw;
+    font-size: 12pt;
+    color: white;
+    background-color: rgba(0, 0, 0, .8);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px;
+    overflow: auto;
+    display: grid;
+    grid-template-rows: 3fr ;
+
+    /* filter: blur(1px); dar um jeito de aplicar um efeito de desfoque no fundo */
+    /* Fazer com que o texto va para baixo e haja uma barra vertical para ve-lo sem estourar a div */
+
+}
+
+#iniciar{
+
+    height: 80px;
+    width: 80px;
+    font-size: 16pt;
+    margin-top: 20px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px white;/*mudar direitinho depois*/
+
+}
+
+p::after {
+
+    content: ' ...';
+    opacity: 1;
+    animation: pisca .5s infinite;
+
+}
+
+@keyframes pisca {
+
+    0%, 100%{
+
+        opacity: 0;
+
+    }
+
+    50%{
+
+        opacity: 1;
+
+    }
+
+}
+
+.about {
+
+    height: 40vh;
+    background: url('img/montanha.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    overflow: auto;
+
+}
+
+.boxes {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+
+}
+
+.box{
+
+    height: 200px;
+    width: 175px;
+    box-shadow: 1px 1px 5px black;
+    border-radius: 10px;
+    margin: 30px;
+    display: grid;
+    grid-template-rows: .5fr 1.5fr;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.678);
+    /* overflow: auto; */
+
+}
+
+.titulo {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    
+}
+
+.textos-box {
+
+    margin-top: 20px;
+
+}
+
+h4 {
+
+    font-size: 10pt;
+
+}
+
+#copiar {
+
+    display: flex;
+    align-self: rigth;
+    width: 100%;
+
+}
+
+#copiar img{
+
+    height: 20px;
+    width: 20px;
+
+}
+
