@@ -101,9 +101,7 @@
     border-top-right-radius: 10px;
     padding: 10px;
     overflow: auto;
-    display: grid;
-    grid-template-rows: 3fr ;
-
+    
     /* filter: blur(1px); dar um jeito de aplicar um efeito de desfoque no fundo */
     /* Fazer com que o texto va para baixo e haja uma barra vertical para ve-lo sem estourar a div */
 
@@ -147,10 +145,14 @@ p::after {
 .about {
 
     height: 40vh;
-    background: url('img/montanha.jpg');
+    max-width: 200vw;
+    
+    /* background: url('img/montanha.jpg'); */
+
+    background-color: #E3F2FD   ;
     background-attachment: fixed;
     background-position: center;
-    overflow: auto;
+    /* overflow: auto; */
 
 }
 
@@ -160,12 +162,15 @@ p::after {
     justify-content: center;
     align-items: center;
     overflow: auto;
+    height: 100%;
 
 }
 
 .box{
 
+    position: relative;
     height: 200px;
+    min-width: 175px;
     width: 175px;
     box-shadow: 1px 1px 5px black;
     border-radius: 10px;
@@ -173,7 +178,8 @@ p::after {
     display: grid;
     grid-template-rows: .5fr 1.5fr;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.678);
+    background-color: #212121d0;
+    color: white;
     /* overflow: auto; */
 
 }
@@ -183,7 +189,8 @@ p::after {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.897);
+    color: white;
     border-top-right-radius: 7px;
     border-top-left-radius: 7px;
     
@@ -192,7 +199,7 @@ p::after {
 .textos-box {
 
     margin-top: 20px;
-
+    
 }
 
 h4 {
@@ -213,6 +220,13 @@ h4 {
 
     height: 20px;
     width: 20px;
+
+}
+
+video {
+
+    height: 200px;
+    width: 175px;
 
 }
 

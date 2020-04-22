@@ -10,6 +10,10 @@ function verificaPausa () {
     value = aperto / 2
     botao.innerHTML = "Pausar"
 
+    if (aperto == 2)
+
+        texto.innerHTML = ""
+
     if (Number.isInteger(value)){
 
         botao.innerHTML = "Pausar"
@@ -59,6 +63,11 @@ function ouve (estado) {
 
 new Clipboard('.btn')
 
+$("#texto-transcrito").click(function(){
+    $(this).select();
+    document.execCommand('copy');
+  })
+
 
 /* 
 
@@ -66,6 +75,8 @@ new Clipboard('.btn')
 
 ## Texto estoura a div quando ele e mt grande   xxOKxx
 
-##fazer opcao de copiar o texto digitado para a area de transferencia ou enviar por email/ whatsapp
+##fazer opcao de copiar o texto digitado para a area de transferencia ou enviar por email/ whatsapp  xxOKxx
+
+##dar opcao de apagar - tudo ou so a ultima parte transcrita -
 
 */
