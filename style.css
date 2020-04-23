@@ -101,11 +101,10 @@
     border-top-right-radius: 10px;
     padding: 10px;
     overflow: auto;
-    
-    /* filter: blur(1px); dar um jeito de aplicar um efeito de desfoque no fundo */
-    /* Fazer com que o texto va para baixo e haja uma barra vertical para ve-lo sem estourar a div */
+    box-shadow: 2px 2px 6px black;
 
 }
+
 
 #iniciar{
 
@@ -114,7 +113,8 @@
     font-size: 16pt;
     margin-top: 20px;
     border-radius: 50%;
-    box-shadow: 1px 1px 5px white;/*mudar direitinho depois*/
+    color: white;
+    background-color: #181a1b;
 
 }
 
@@ -149,7 +149,7 @@ p::after {
     
     /* background: url('img/montanha.jpg'); */
 
-    background-color: #E3F2FD   ;
+    background-color: #202224   ;
     background-attachment: fixed;
     background-position: center;
     /* overflow: auto; */

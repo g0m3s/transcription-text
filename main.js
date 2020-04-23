@@ -1,8 +1,7 @@
 var texto =  document.getElementById('texto-transcrito')
 var botao =  document.getElementById('iniciar')
-var aperto = 1
-
 var value = 0
+var aperto = 1
 
 function verificaPausa () {
 
@@ -35,17 +34,16 @@ function ouve (estado) {
     reconhecimento.lang = "pt-BR"
     reconhecimento.interimResults = true
     reconhecimento.continuous = true
-    reconhecimento. start()
+    reconhecimento.start()
     reconhecimento.onresult = (event) => {
 
         for (let i = event.resultIndex; i < event.results.length; i++) {
 
-
+            
             if (event.results[i].isFinal && estado == 1){
 
                texto.innerHTML = texto.innerHTML + " " + `${event.results[i][0].transcript.trim()}`
-               console.log(estado)
-
+               
             }
             
         }
@@ -54,13 +52,8 @@ function ouve (estado) {
 
 }
 
-// let copiarTexto = ()  => {
 
-//     texto.select()
-//     document.execCommand('copy')
-
-// }
-
+//faz a copia do texto transcrito para a area de trabalho assim que ele e selecionado
 new Clipboard('.btn')
 
 $("#texto-transcrito").click(function(){
